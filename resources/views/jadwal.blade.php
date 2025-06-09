@@ -23,7 +23,7 @@
             grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
             gap: 1em;
             margin: 2em auto;
-            max-width: 900px;
+            max-width: 600px;
         }
 
         .box {

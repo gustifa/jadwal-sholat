@@ -29,6 +29,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::resource('/admin/iqomah', IqomahDurationController::class)->only(['index', 'edit', 'update']);
     Route::get('/jadwal-sholat', [JadwalSholatController::class, 'index']);
+    Route::get('/test', [JadwalSholatController::class, 'test']);
 });
 
 require __DIR__.'/auth.php';
