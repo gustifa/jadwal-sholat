@@ -81,7 +81,7 @@
     </style>
 </head>
 <body>
-    <h1>Jadwal Sholat Hari Ini - Pasaman Barat</h1>
+    <h1>Jadwal Sholat Hari Ini</h1>
 
     <div class="jadwal-container" id="jadwal-boxes">
         <!-- Box Jadwal akan diisi oleh JavaScript -->

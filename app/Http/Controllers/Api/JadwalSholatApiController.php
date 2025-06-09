@@ -10,7 +10,8 @@ class JadwalSholatApiController extends Controller
 {
     public function jadwal(Request $request)
     {
-    $city = $request->input('city', 'sumedang');
+    $lokasi = 'Pasaman Barat';
+    $city = $request->input('city', $lokasi);
     $country = $request->input('country', 'Indonesia');
     $method = $request->input('method', 20); // 20 = Moonsighting Committee Worldwide
 
