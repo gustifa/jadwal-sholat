@@ -155,6 +155,7 @@
         }
 
         loadJadwal();
+        //setInterval(() => loadJadwal(), 360);
     </script>
 </body>
 </html>

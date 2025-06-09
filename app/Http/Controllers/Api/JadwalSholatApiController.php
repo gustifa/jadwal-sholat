@@ -16,6 +16,7 @@ class JadwalSholatApiController extends Controller
     $method = $request->input('method', 20); // 20 = Moonsighting Committee Worldwide
 
     $url = "https://api.aladhan.com/v1/timingsByCity?city=$city&country=$country&method=$method";
+    //https://api.aladhan.com/v1/timingsByCity?city=Pasaman%20Barat&country=Indonesia&method=20
 
     $response = Http::get($url);
     if (!$response->successful()) {
@@ -29,7 +30,7 @@ class JadwalSholatApiController extends Controller
     return response()->json([
         ['nama' => 'Imsak', 'waktu' => $timings['Imsak'], 'iqomah' => 0],
         ['nama' => 'Subuh', 'waktu' => $timings['Fajr'], 'iqomah' => 5],
-        ['nama' => 'Dzuhur', 'waktu' => $timings['Dhuhr'], 'iqomah' => 10],
+        ['nama' => 'Dzuhur', 'waktu' => $timings['Dhuhr'], 'iqomah' => 2],
         ['nama' => 'Ashar', 'waktu' => $timings['Asr'], 'iqomah' => 10],
         ['nama' => 'Maghrib', 'waktu' => $timings['Maghrib'], 'iqomah' => 5],
         ['nama' => 'Isya', 'waktu' => $timings['Isha'], 'iqomah' => 10],
