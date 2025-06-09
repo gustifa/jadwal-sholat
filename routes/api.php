@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\JadwalSholatApiController;
+use App\Http\Controllers\WaktuController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +24,4 @@ Route::get('/iqomah-durations', function () {
     return \App\Models\IqomahDuration::pluck('duration', 'sholat');
 });
 Route::get('/jadwal-sholat', [JadwalSholatApiController::class, 'jadwal']);
+Route::get('/waktu-ntp', [WaktuController::class, 'getWaktu']);

@@ -16,7 +16,11 @@ use App\Http\Controllers\JadwalSholatController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('depan');
+});
+
+Route::get('/iqomah', function () {
+    return view('iqomah');
 });
 
 Route::get('/dashboard', function () {
@@ -30,6 +34,7 @@ Route::middleware('auth')->group(function () {
     Route::resource('/admin/iqomah', IqomahDurationController::class)->only(['index', 'edit', 'update']);
     Route::get('/jadwal-sholat', [JadwalSholatController::class, 'index']);
     Route::get('/test', [JadwalSholatController::class, 'test']);
+    Route::get('/tanggal', [JadwalSholatController::class, 'tanggal']);
 });
 
 require __DIR__.'/auth.php';

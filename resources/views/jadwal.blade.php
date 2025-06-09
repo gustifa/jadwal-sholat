@@ -93,12 +93,12 @@
     <div id="countdown">00:00</div>
 
     <audio id="adzan" src="/audio/adzan.mp3"></audio>
-    <audio id="iqomah" src="/audio/iqomah.ogg"></audio>
+    <audio id="iqomah" src="/audio/iqomah.mp3"></audio>
 
     <!-- Ticker / Text Berjalan -->
   <div class="ticker-container">
     <div class="ticker-text" id="ticker-text">
-      ✨ Assalamu’alaikum Warahmatullah Wabarakatuh | Selamat datang di Masjid Al-Furqan | Jaga kebersihan masjid, rapatkan shaf, sholat berjamaah tepat waktu | Info: Kajian rutin setiap Sabtu Ba’da Maghrib bersama Ust. Ahmad | اللهم اجعلنا من المقيمين الصلاة ✨
+      ✨ Assalamu’alaikum Warahmatullah Wabarakatuh | Selamat datang di Masjid Al-Fatih | Jaga kebersihan masjid, rapatkan shaf, sholat berjamaah tepat waktu | Info: Kajian rutin setiap Sabtu Ba’da Maghrib bersama Ust. Ahmad | اللهم اجعلنا من المقيمين الصلاة ✨
     </div>
   </div>
 

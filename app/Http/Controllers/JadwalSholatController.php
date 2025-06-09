@@ -17,6 +17,11 @@ class JadwalSholatController extends Controller
         return view('test');
     }
 
+    public function tanggal()
+    {
+        return view('tanggal');
+    }
+
     public function api()
     {
         $kota = 1301; // ID kota API
